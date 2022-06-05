@@ -1,0 +1,19 @@
+E:\Github\Babytor\tools\create-project\testgit
+npm install
+
+-> To build
+npm run build
+
+-> To develop
+npm run dev
+
+-> List all packages
+npm list
+
+-> List all packages globally
+npm list -g
+
+
+----------------
+Configurations
+- > a 
