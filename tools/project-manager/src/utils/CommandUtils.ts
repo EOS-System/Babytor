@@ -1,5 +1,5 @@
 import { exec, spawn } from 'child_process';
-import { ResponseData } from '../ResponseData';
+import { ResponseData } from '../data/ResponseData';
 
 export class CommandUtils {
   public static async executeCommand(path: string, command: string): Promise<ResponseData> {

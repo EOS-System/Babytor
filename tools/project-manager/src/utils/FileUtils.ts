@@ -1,6 +1,11 @@
 import * as fs from 'fs';
-import { ResponseData } from '../ResponseData';
+import * as os from 'os';
+import { resolve } from 'path';
+import { ResponseData } from '../data/ResponseData';
 export class FileUtils {
+  public static fileExist(path: string): boolean {
+    return fs.existsSync(path);
+  }
   public static async readFile(path: string): Promise<ResponseData> {
     return new Promise<ResponseData>((resolve) => {
       fs.readFile(path, 'utf8', (err, data) => {
@@ -42,6 +47,15 @@ export class FileUtils {
       fs.rm(path, { recursive: true }, (err) => {
         if (err) resolve(new ResponseData(false, err.message));
         else resolve(new ResponseData(true, 'Folder deleted'));
+      });
+    });
+  }
+
+  public static async createFile(path: string) {
+    return new Promise<ResponseData>((resolve) => {
+      fs.writeFile(path, '', (err) => {
+        if (err) resolve(new ResponseData(false, err.message));
+        else resolve(new ResponseData(true, 'File created'));
       });
     });
   }
@@ -149,5 +163,9 @@ export class FileUtils {
         }
       });
     });
+  }
+
+  public static toAbsolutePath(path: string): string {
+    return resolve(process.cwd(), path);
   }
 }

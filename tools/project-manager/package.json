@@ -1,11 +1,11 @@
 {
-    "name": "tool-template",
+    "name": "project-manager",
     "version": "1.0.0",
     "description": "",
     "main": "index.js",
     "scripts": {
-        "start": "rmdir /S /Q .\\lib && tsc && node lib/index.js",
-        "build": "rmdir /S /Q .\\lib && tsc",
+        "start": "del /S /Q .\\lib && tsc && node lib/index.js",
+        "build": "del /S /Q .\\lib && tsc",
         "format": "prettier --write \"src/**/*.ts\" \"src/**/*.js\"",
         "lint": "tslint -p tsconfig.json"
     },
