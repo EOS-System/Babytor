@@ -1,0 +1,3 @@
+https://github.com/LukasMasuch/best-of-react
+https://angrytools.com/css-grid/
+https://coolors.co/404040-383838-333333-2d2d2d-191919

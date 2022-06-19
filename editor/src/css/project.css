@@ -1,0 +1,76 @@
+.project {
+  display: grid;
+
+  grid-template-rows: 70px 70px 1fr 1fr 70px 45px;
+  grid-template-columns: 120px 1fr 1fr 1fr 1fr 1fr 1fr 1fr 120px;
+
+  gap: 0px;
+  height: 100%;
+}
+
+.project > div {
+  border: 1px solid #313131;
+}
+
+#hub-manager {
+  background-color: #191919;
+  grid-row-start: 1;
+  grid-column-start: 1;
+
+  grid-row-end: 2;
+  grid-column-end: 3;
+}
+
+#project-actions {
+  background-color: #191919;
+  grid-row-start: 2;
+  grid-column-start: 1;
+
+  grid-row-end: 5;
+  grid-column-end: 3;
+}
+
+#tasks {
+  background-color: #191919;
+  grid-row-start: 5;
+  grid-column-start: 1;
+
+  grid-row-end: 6;
+  grid-column-end: 3;
+}
+
+#project-search-title {
+  background-color: #2d2d2d;
+  grid-row-start: 1;
+  grid-column-start: 3;
+
+  grid-row-end: 2;
+  grid-column-end: 10;
+}
+
+#project-create-open {
+  background-color: #2d2d2d;
+  grid-row-start: 5;
+  grid-column-start: 3;
+
+  grid-row-end: 7;
+  grid-column-end: 10;
+}
+
+#project-list {
+  background-color: #2d2d2d;
+  grid-row-start: 2;
+  grid-column-start: 3;
+
+  grid-row-end: 5;
+  grid-column-end: 10;
+}
+
+#hub-version {
+  background-color: #404040;
+  grid-row-start: 6;
+  grid-column-start: 1;
+
+  grid-row-end: 7;
+  grid-column-end: 3;
+}
