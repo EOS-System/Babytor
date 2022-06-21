@@ -1,7 +1,7 @@
 .project {
   display: grid;
 
-  grid-template-rows: 70px 70px 1fr 1fr 70px 45px;
+  grid-template-rows: 20px 70px 70px 1fr 1fr 70px 45px;
   grid-template-columns: 120px 1fr 1fr 1fr 1fr 1fr 1fr 1fr 120px;
 
   gap: 0px;
@@ -12,66 +12,75 @@
   border: 1px solid #313131;
 }
 
-#hub-manager {
+#window-bar {
   background-color: var(--side-background);
   grid-row-start: 1;
   grid-column-start: 1;
 
-  grid-row-end: 2;
+  grid-row-end: 1;
+  grid-column-end: 10;
+}
+
+#hub-manager {
+  background-color: var(--side-background);
+  grid-row-start: 2;
+  grid-column-start: 1;
+
+  grid-row-end: 3;
   grid-column-end: 3;
 }
 
 #project-actions {
   background-color: var(--side-background);
-  grid-row-start: 2;
-  grid-column-start: 1;
-
-  grid-row-end: 5;
-  grid-column-end: 3;
-}
-
-#tasks {
-  background-color: var(--side-background);
-  grid-row-start: 5;
+  grid-row-start: 3;
   grid-column-start: 1;
 
   grid-row-end: 6;
   grid-column-end: 3;
 }
 
+#tasks {
+  background-color: var(--side-background);
+  grid-row-start: 6;
+  grid-column-start: 1;
+
+  grid-row-end: 7;
+  grid-column-end: 3;
+}
+
 #project-search-title {
   background-color: var(--main-background);
-  grid-row-start: 1;
+  grid-row-start: 2;
   grid-column-start: 3;
 
-  grid-row-end: 2;
+  grid-row-end: 3;
   grid-column-end: 10;
 }
 
 #project-create-open {
   background-color: var(--main-background);
-  grid-row-start: 5;
+  grid-row-start: 6;
   grid-column-start: 3;
 
-  grid-row-end: 7;
+  grid-row-end: 8;
   grid-column-end: 10;
 }
 
 #project-list {
   background-color: var(--main-background);
-  grid-row-start: 2;
+  grid-row-start: 3;
   grid-column-start: 3;
 
-  grid-row-end: 5;
+  grid-row-end: 6;
   grid-column-end: 10;
 }
 
 #hub-version {
   background-color: var(--side-second-background);
-  grid-row-start: 6;
+  grid-row-start: 7;
   grid-column-start: 1;
 
-  grid-row-end: 7;
+  grid-row-end: 8;
   grid-column-end: 3;
 }
 

@@ -16,6 +16,7 @@ const options = [
 function Project() {
   return (
     <div className="project full-height">
+      <div id="window-bar"></div>
       <div id="hub-manager" className="center-helper">
         <Button
           className="side-background ninetyfullWidth"
