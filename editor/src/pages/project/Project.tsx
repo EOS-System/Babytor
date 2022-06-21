@@ -1,7 +1,9 @@
 import "./project.css";
-import { Button } from "semantic-ui-react";
+import { Button, Header, Segment } from "semantic-ui-react";
 import ButtonDropdown from "../../components/ButtonDropdown";
-import TableProjectRow from "../../components/TableProjectRow";
+import TableProjectRow from "./component/TableProjectRow";
+import SearchStandard from "../../components/SearchStandard";
+import pjson from "../../../package.json";
 const options = [
   { key: "remote", icon: "git", text: "Clone a repository", value: "remote" },
   {
@@ -14,12 +16,50 @@ const options = [
 function Project() {
   return (
     <div className="project full-height">
-      <div id="hub-manager">&nbsp;</div>
-      <div id="project-actions">&nbsp;</div>
-      <div id="tasks">&nbsp;</div>
-      <div id="project-search-title">&nbsp;</div>
-      <div id="project-create-open">
-        <Button>Create a project</Button>
+      <div id="hub-manager" className="center-helper">
+        <Button
+          className="side-background ninetyfullWidth"
+          content="Settings"
+          icon="settings"
+        />
+      </div>
+      <div id="project-actions" className="center-helper row-list">
+        <Button
+          className="side-background ninetyfullWidth"
+          content="Projects"
+          icon="folder"
+        />
+        <br />
+        <Button
+          className="side-background ninetyfullWidth"
+          content="Installs"
+          icon="box"
+        />
+        <br />
+        <Button
+          className="side-background ninetyfullWidth"
+          content="Information"
+          icon="info"
+        />
+        <br />
+        <Button
+          className="side-background ninetyfullWidth"
+          content="Github"
+          icon="github"
+        />
+      </div>
+      <div id="tasks" className="center-helper">
+        <Button
+          className="ninetyfullWidth side-background"
+          content="Tasks"
+          icon="tasks"
+        />
+      </div>
+      <div id="project-search-title" className="center-helper">
+        <Header as="h1">Project</Header>
+      </div>
+      <div id="project-create-open" className="center-helper">
+        <Button content="Create a project" icon="add" />
         <ButtonDropdown
           name={"Open project"}
           options={options}
@@ -27,15 +67,21 @@ function Project() {
       </div>
       <div id="project-list">
         <TableProjectRow
-          columnNames={["Name", "Modified", "Editor version"]}
+          columnNames={["Name", "Path", "Modified", "Editor version"]}
           rows={[
-            [0, 1, 2],
-            [3, 4, 5],
-            [6, 7, 8],
+            [
+              "Sword Tournament Online",
+              "E:OneDrive - Université Nice Sophia AntipolisMiage S5",
+              ,
+              "a minute ago",
+              "Babytor StarShip",
+            ],
           ]}
         ></TableProjectRow>
       </div>
-      <div id="hub-version">&nbsp;</div>
+      <div id="hub-version" className="center-helper">
+        <Header as="h4">{pjson.version}</Header>
+      </div>
     </div>
   );
 }

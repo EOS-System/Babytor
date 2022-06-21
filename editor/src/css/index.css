@@ -1,5 +1,7 @@
 :root {
-  --primary: red;
+  --main-background: #2d2d2d;
+  --side-background: #191919;
+  --side-second-background: #404040;
 }
 
 * {

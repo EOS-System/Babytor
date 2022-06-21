@@ -13,7 +13,7 @@
 }
 
 #hub-manager {
-  background-color: #191919;
+  background-color: var(--side-background);
   grid-row-start: 1;
   grid-column-start: 1;
 
@@ -22,7 +22,7 @@
 }
 
 #project-actions {
-  background-color: #191919;
+  background-color: var(--side-background);
   grid-row-start: 2;
   grid-column-start: 1;
 
@@ -31,7 +31,7 @@
 }
 
 #tasks {
-  background-color: #191919;
+  background-color: var(--side-background);
   grid-row-start: 5;
   grid-column-start: 1;
 
@@ -40,7 +40,7 @@
 }
 
 #project-search-title {
-  background-color: #2d2d2d;
+  background-color: var(--main-background);
   grid-row-start: 1;
   grid-column-start: 3;
 
@@ -49,7 +49,7 @@
 }
 
 #project-create-open {
-  background-color: #2d2d2d;
+  background-color: var(--main-background);
   grid-row-start: 5;
   grid-column-start: 3;
 
@@ -58,7 +58,7 @@
 }
 
 #project-list {
-  background-color: #2d2d2d;
+  background-color: var(--main-background);
   grid-row-start: 2;
   grid-column-start: 3;
 
@@ -67,10 +67,40 @@
 }
 
 #hub-version {
-  background-color: #404040;
+  background-color: var(--side-second-background);
   grid-row-start: 6;
   grid-column-start: 1;
 
   grid-row-end: 7;
   grid-column-end: 3;
+}
+
+h1,
+h4 {
+  color: white !important;
+}
+
+.side-background {
+  background-color: transparent !important;
+  color: white !important;
+  border-radius: 10px !important;
+}
+
+.side-background:hover {
+  background-color: #ffffff10 !important;
+}
+
+.center-helper {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.ninetyfullWidth {
+  width: 90%;
+}
+
+.row-list {
+  display: flex;
+  flex-direction: column;
 }

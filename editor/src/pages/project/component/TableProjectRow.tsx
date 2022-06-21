@@ -18,11 +18,7 @@ function TableProjectRow(props: any) {
             <Table.Row>
               {rowData.map((value: any, i: number) => {
                 return (
-                  <Table.Cell>
-                    {value}
-                    {i === 0 && <Divider fitted />}
-                    {i === 0 && value}
-                  </Table.Cell>
+                  <Table.Cell style={{ padding: "5px" }}>{value}</Table.Cell>
                 );
               })}
             </Table.Row>
