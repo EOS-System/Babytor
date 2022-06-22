@@ -1,9 +1,9 @@
 import "./project.css";
-import { Button, Header, Segment } from "semantic-ui-react";
+import { Button, Header } from "semantic-ui-react";
 import ButtonDropdown from "../../components/ButtonDropdown";
 import TableProjectRow from "./component/TableProjectRow";
-import SearchStandard from "../../components/SearchStandard";
 import pjson from "../../../package.json";
+import "semantic-ui-css/semantic.min.css";
 const options = [
   { key: "remote", icon: "git", text: "Clone a repository", value: "remote" },
   {
@@ -16,7 +16,11 @@ const options = [
 function Project() {
   return (
     <div className="project full-height">
-      <div id="window-bar"></div>
+      <div id="window-bar">
+        <button className="window-button button-close">⬤</button>
+        <button className="window-button button-enlarge">⬤</button>
+        <button className="window-button button-minimize">⬤</button>
+      </div>
       <div id="hub-manager" className="center-helper">
         <Button
           className="side-background ninetyfullWidth"

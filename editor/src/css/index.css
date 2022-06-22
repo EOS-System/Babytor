@@ -25,3 +25,34 @@ body {
   padding: 0 !important;
   margin: 0 !important;
 }
+
+.button-enlarge {
+  color: #15cc32;
+}
+
+.button-minimize {
+  color: #febf07;
+}
+
+.button-close {
+  color: #ff5e56;
+}
+
+#window-bar {
+  -webkit-user-select: none;
+  user-select: none;
+  -webkit-app-region: drag;
+}
+
+.window-button {
+  -webkit-user-select: auto;
+  user-select: none;
+  -webkit-app-region: none;
+  background-color: transparent;
+  height: 100%;
+  padding: 0px;
+  margin: 0px;
+  float: right;
+  width: 20px;
+  border-width: 0px;
+}
