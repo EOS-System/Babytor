@@ -1,9 +1,9 @@
 {
-    "name": "baby-hub",
+    "name": "baby-editor",
     "version": "Starship-0.0.0",
     "author": "Sebastien Aglae",
     "main": "electron/electron.js",
-    "description": "The hub for babytor",
+    "description": "The editor for babylon",
     "scripts": {
         "dev": "vite",
         "build": "tsc && vite build",
@@ -37,8 +37,8 @@
         "vite": "^2.9.0"
     },
     "build": {
-        "appId": "com.eos.babytorhub",
-        "productName": "BabyHub",
+        "appId": "com.eos.babytoreditor",
+        "productName": "BabyTor",
         "copyright": "Copyright © 2022 ${author}",
         "mac": {
             "category": "public.developpment.editor"

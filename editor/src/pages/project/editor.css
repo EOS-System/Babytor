@@ -1,0 +1,24 @@
+.contentWindow {
+  background-color: #b4e0de;
+}
+.resizer {
+  background-color: #4e6160;
+}
+.verticalResizer {
+  cursor: ns-resize;
+}
+.horizontalResizer {
+  cursor: ew-resize;
+}
+
+#win5 {
+  background-color: #81a19f;
+}
+
+#win4 {
+  background-color: #beedeb;
+}
+
+#win6 {
+  background-color: #b4e0de;
+}

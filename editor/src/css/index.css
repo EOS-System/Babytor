@@ -2,6 +2,7 @@
   --main-background: #2d2d2d;
   --side-background: #191919;
   --side-second-background: #404040;
+  --window-height: 20px;
 }
 
 * {
@@ -10,6 +11,19 @@
 
 .full-height {
   height: 100%;
+}
+
+.page {
+  height: calc(100% - var(--window-height));
+}
+
+#window-bar {
+  height: var(--window-height);
+  width: 100vw;
+  background-color: var(--side-background);
+  -webkit-user-select: none;
+  user-select: none;
+  -webkit-app-region: drag;
 }
 
 html {
@@ -21,7 +35,7 @@ html {
 
 body {
   height: 100vh !important;
-  background: red !important;
+  background: var(--main-background) !important;
   padding: 0 !important;
   margin: 0 !important;
 }
@@ -36,12 +50,6 @@ body {
 
 .button-close {
   background-color: #ff5e56;
-}
-
-#window-bar {
-  -webkit-user-select: none;
-  user-select: none;
-  -webkit-app-region: drag;
 }
 
 .window-button {
