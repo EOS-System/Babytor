@@ -1,0 +1,70 @@
+:root {
+  --main-background: #2d2d2d;
+  --side-background: #191919;
+  --side-second-background: #404040;
+  --window-height: 20px;
+}
+
+* {
+  user-select: none;
+}
+
+.full-height {
+  height: 100%;
+}
+
+.page {
+  height: calc(100% - var(--window-height));
+}
+
+#window-bar {
+  height: var(--window-height);
+  width: 100vw;
+  background-color: var(--side-background);
+  -webkit-user-select: none;
+  user-select: none;
+  -webkit-app-region: drag;
+}
+
+html {
+  height: 100vh !important;
+  background: var(--main-background) !important;
+  padding: 0 !important;
+  margin: 0 !important;
+}
+
+body {
+  height: 100vh !important;
+  background: var(--main-background) !important;
+  padding: 0 !important;
+  margin: 0 !important;
+}
+
+.button-enlarge {
+  background-color: #15cc32;
+}
+
+.button-minimize {
+  background-color: #febf07;
+}
+
+.button-close {
+  background-color: #ff5e56;
+}
+
+.window-button {
+  -webkit-user-select: auto;
+  user-select: none;
+  -webkit-app-region: none;
+  height: 100%;
+  padding: 0px;
+  margin: 0px;
+  float: right;
+  width: 20px;
+  border-width: 0px;
+  outline: none;
+}
+
+.window-button:hover {
+  filter: brightness(0.8);
+}
