@@ -14,7 +14,7 @@
 
 html {
   height: 100vh !important;
-  background: yellow !important;
+  background: var(--main-background) !important;
   padding: 0 !important;
   margin: 0 !important;
 }
@@ -27,15 +27,15 @@ body {
 }
 
 .button-enlarge {
-  color: #15cc32;
+  background-color: #15cc32;
 }
 
 .button-minimize {
-  color: #febf07;
+  background-color: #febf07;
 }
 
 .button-close {
-  color: #ff5e56;
+  background-color: #ff5e56;
 }
 
 #window-bar {
@@ -48,11 +48,15 @@ body {
   -webkit-user-select: auto;
   user-select: none;
   -webkit-app-region: none;
-  background-color: transparent;
   height: 100%;
   padding: 0px;
   margin: 0px;
   float: right;
   width: 20px;
   border-width: 0px;
+  outline: none;
+}
+
+.window-button:hover {
+  filter: brightness(0.8);
 }

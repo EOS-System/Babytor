@@ -4,6 +4,7 @@ import ButtonDropdown from "../../components/ButtonDropdown";
 import TableProjectRow from "./component/TableProjectRow";
 import pjson from "../../../package.json";
 import "semantic-ui-css/semantic.min.css";
+import { ElectronManager } from "../../ElectronManager";
 const options = [
   { key: "remote", icon: "git", text: "Clone a repository", value: "remote" },
   {
@@ -17,9 +18,18 @@ function Project() {
   return (
     <div className="project full-height">
       <div id="window-bar">
-        <button className="window-button button-close">⬤</button>
-        <button className="window-button button-enlarge">⬤</button>
-        <button className="window-button button-minimize">⬤</button>
+        <button
+          className="window-button button-close"
+          onClick={() => ElectronManager.closeCurrentWindow()}
+        ></button>
+        <button
+          className="window-button button-enlarge"
+          onClick={() => ElectronManager.enlargeCurrentWindow()}
+        ></button>
+        <button
+          className="window-button button-minimize"
+          onClick={() => ElectronManager.minimizeCurrentWindow()}
+        ></button>
       </div>
       <div id="hub-manager" className="center-helper">
         <Button
